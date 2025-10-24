@@ -50,7 +50,7 @@ void vecAdd(float* A, float* B, float*C, int n) {
 ### Compilation
 The code needs to be compiled by a compiler that recognizes and understands these extensions, such as NVCC (NVIDIA C compiler). The host code is straight ANSI C code, which is compiled with the host’s standard C/C++ compilers and is run as a traditional CPU process. The device code, which is marked with CUDA keywords that designate CUDA kernels and their associated helper functions and data structures, is compiled by NVCC into virtual binary files called PTX files. 
 
- Integrate C programs with Cuda Extensions -----> NVCC Compiler --------> Host C preprocessor, compiler/linker ------------> Hetrogeneous Computing Platform with CPUs, GPUs
+(Add Image)  Integrate C programs with Cuda Extensions -----> NVCC Compiler --------> Host C preprocessor, compiler/linker ------------> Hetrogeneous Computing Platform with CPUs, GPUs
                                                                 --------> Device just-in-time compiler                
 
 
@@ -67,7 +67,7 @@ void vecAddKernel(float* A, Float* B, float* C, int n) {
          }
 }
 ```
-Qualified Keyword    Callable From        Executed On   Executed By
+(Add Table) Qualified Keyword    Callable From        Executed On   Executed By
 __host__(default)    Host                 Host          Caller host thread 
 __global__           Host(or Device)      Device        New grid of device threads
 __device__           Device               Device        Caller device thread 
