@@ -52,6 +52,7 @@ The code needs to be compiled by a compiler that recognizes and understands thes
 
 (Add Image)  Integrate C programs with Cuda Extensions -----> NVCC Compiler --------> Host C preprocessor, compiler/linker ------------> Hetrogeneous Computing Platform with CPUs, GPUs
                                                                 --------> Device just-in-time compiler                
+<img width="688" height="554" alt="Screenshot 2025-10-24 at 5 38 33 PM" src="https://github.com/user-attachments/assets/0ea655dd-ea60-4289-8747-4e8ce785d7b1" />
 
 
 One can think of each phone line as a CUDA thread, with the area code as the value of blockIdx and the seven-digital local number as the value of threadIdx. This hierarchical organization allows the system to have a very large number of phone lines while preserving “locality” for calling the same area. That is, when dialing a phone line in the same area, a caller only needs to dial the local number. As long as we make most of our calls within the local area, we seldom need to dial the area code. If we occasionally need to call a phone line in another area, we dial 1 and the area code, followed by the local number. (This is the reason why no local number in any area should start with a 1.) The hierarchical organization of CUDA threads also offers a form of locality. 
@@ -71,6 +72,9 @@ void vecAddKernel(float* A, Float* B, float* C, int n) {
 __host__(default)    Host                 Host          Caller host thread 
 __global__           Host(or Device)      Device        New grid of device threads
 __device__           Device               Device        Caller device thread 
+<img width="654" height="294" alt="Screenshot 2025-10-24 at 5 37 55 PM" src="https://github.com/user-attachments/assets/e676e222-1779-4a85-a520-90531fb2f686" />
+
+
 
 The “__device__” keyword indicates that the function being declared is a CUDA device function. A device function executes on a CUDA device and can be called only from a kernel function or another device function. The device function is executed by the device thread that calls it and does not result in any new device threads being launched.
 
