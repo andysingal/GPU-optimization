@@ -85,3 +85,5 @@ The “__host__” keyword indicates that the function being declared is a CUDA 
 ## Courses 
 
 [cuda-course](https://github.com/Infatoshi/cuda-course/tree/master)
+
+[cude-youtube](CUDA Programming Course – High-Performance Computing with GPUs)
