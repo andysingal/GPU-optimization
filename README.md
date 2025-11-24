@@ -1,5 +1,9 @@
 # GPU-optimization
 
+
+<img width="1435" height="789" alt="Screenshot 2025-11-24 at 7 57 50 PM" src="https://github.com/user-attachments/assets/8a865c93-1e05-4f07-9ed2-c7965a9dda2c" />
+
+
 [SuperOffload: Unleashing the Power of Large-Scale LLM Training on Superchips](https://pytorch.org/blog/superoffload-unleashing-the-power-of-large-scale-llm-training-on-superchips/)
 
 ### Definitions
