@@ -1,2 +1,3 @@
-HBM - high-bandwidth memory
-DRAM - dynamic random access memory
+- HBM - high-bandwidth memory
+- DRAM - dynamic random access memory
+- SM - Streaming Micorprocessors
