@@ -1,0 +1,1 @@
+Block Scheduling - When a kernel is called, the CUDA runtime system launches a grid of threads that execute the kernel code.These threads are assigned to SMs on a block-by-block basis. That is, all threads in a block are simultaneously assigned to the same SM.
