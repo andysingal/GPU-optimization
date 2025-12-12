@@ -23,3 +23,5 @@ In this example the programmer chose to fix the block size at 256. The value of 
 The total size of a block in current CUDA systems is limited to 1024 threads. These threads can be distributed across the three dimensions in any way as long as the total number of threads does not exceed 1024. For example, blockDim values of (512, 1, 1), (8, 16, 4), and (32, 16, 2) are all allowed, but (32, 32, 2) is not allowed because the total number of threads would exceed 1024.
 
 <img width="690" height="593" alt="Screenshot 2025-11-13 at 2 59 31 PM" src="https://github.com/user-attachments/assets/562f21be-dd14-445a-bb41-c6df36cdf1df" />
+
+
